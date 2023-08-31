@@ -1,0 +1,75 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.experience, .education {
+    margin-bottom: 40px;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    margin-top: 20px;
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Scroll-Up Button */
+.scroll-up {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+}
+
+/* Style the toggle button for open sections */
+.experience h2 .toggle {
+    float: right;
+    transform: rotate(180deg);
+}
+
+.experience h2:hover {
+    cursor: pointer;
+}
+
+.education h2 .toggle {
+    float: right;
+}
+
+.education h2:hover {
+    cursor: pointer;
+}
+
+

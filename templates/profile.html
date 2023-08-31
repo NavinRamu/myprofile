@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="profile-header">
+        <h1 style = "color:white">{{ name }}</h1>
+        <p>{{ career_objective }}</p>
+        <div class="social-media-icons">
+            <a href="#"><img src="{{ url_for('static', filename='images/facebook.png') }}" alt="Facebook"></a>
+            <a href="#"><img src="{{ url_for('static', filename='images/twitter.png') }}" alt="Twitter"></a>
+            <a href="#"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <section class="experience">
+            <h2 onclick="toggleContent(this)">Experience <span class="toggle">-</span></h2>
+            <ul class="content" style="display: block;">
+                {% include "experience.html" %}
+            </ul>
+        </section>
+    
+        <section class="education">
+            <h2 onclick="toggleContent(this)">Education <span class="toggle">+</span></h2>
+            <ul class="content" style="display: none;">
+                {% include "education.html" %} 
+            </ul>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>All Rights Reserved &copy; 2023</p>
+        <a href="#top" class="scroll-up">Scroll Up</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
